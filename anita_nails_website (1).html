@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anita Nails — Luxury Nail Boutique, Budapest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink-1:#ffeef6;
+      --pink-2:#ffd0ea;
+      --rose:#ff7ab1;
+      --rich-gold:linear-gradient(90deg,#f6d365,#fda085);
+      --accent:#b07a6b;
+      --glass: rgba(255,255,255,0.7);
+      --shadow: 0 12px 30px rgba(16,16,16,0.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Montserrat,sans-serif;background:radial-gradient(circle at 10% 10%, var(--pink-1), #fff 40%),linear-gradient(180deg,#fff 0%, #fff8fb 100%);color:#2b2b2b;-webkit-font-smoothing:antialiased}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 6%}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:56px;height:56px;border-radius:12px;background:var(--rose);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Playfair Display',serif;font-size:22px;box-shadow:var(--shadow)}
+    .logo h1{margin:0;font-family:'Playfair Display',serif;font-size:20px;letter-spacing:1px}
+    nav a{margin-left:20px;text-decoration:none;color:#6b4450;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:40px;align-items:center;padding:40px 6%}
+    .hero-left{max-width:720px}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,#ffd6ea,#ffdbe8);padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;color:#6b2740;margin-bottom:18px}
+    .hero-left h2{font-family:'Playfair Display',serif;font-size:44px;margin:0 0 12px;color:#3a2430}
+    .hero-left p{font-size:16px;color:#5b4950;margin-bottom:22px}
+    .cta{display:flex;gap:14px}
+    .btn-primary{background:linear-gradient(90deg,#ff7ab1,#ff4d9c);border:none;padding:12px 20px;border-radius:12px;color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(255,122,177,0.18)}
+    .btn-ghost{background:transparent;border:2px solid rgba(75,28,30,0.08);padding:10px 18px;border-radius:12px;color:#6b4450;font-weight:600;cursor:pointer}
+    .card{background:var(--glass);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .hero-right{display:flex;flex-direction:column;gap:18px}
+    .hero-image{height:420px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .services{padding:40px 6%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .service{background:white;border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(50,20,30,0.06)}
+    .service h3{margin:0 0 10px;font-family:'Playfair Display',serif}
+    .service p{margin:0;color:#6b5960}
+    .gallery-section{padding:30px 6%;}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+    .gallery img{width:100%;height:170px;object-fit:cover;border-radius:12px;box-shadow:0 8px 22px rgba(16,16,16,0.08);transition:transform 0.3s ease;}
+    .gallery img:hover{transform:scale(1.05)}
+    .pricing{padding:40px 6%;display:flex;gap:24px;flex-wrap:wrap}
+    .price-card{flex:1;min-width:240px;background:white;border-radius:14px;padding:18px;box-shadow:0 10px 30px rgba(16,16,16,0.06)}
+    .price-card h4{margin:0 0 8px;font-family:'Playfair Display',serif}
+    .price-card .price{font-size:20px;font-weight:700;color:#8b3b55}
+    footer{padding:30px 6%;display:flex;justify-content:space-between;align-items:center}
+    .social a{text-decoration:none;margin-left:14px;color:#7a4a55}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.hero-right{order:-1}.hero-image{height:320px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">AN</div>
+      <div>
+        <h1>Anita Nails</h1>
+        <div style="font-size:12px;color:#8a5b64">Luxury Nail Boutique — Budapest</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Portfolio</a>
+      <a href="#prices">Prices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <span class="eyebrow">Limited Appointments — Book Early</span>
+        <h2>Where Budapest comes for elegant, couture nails</h2>
+        <p>Hand-crafted manicures using premium products, bespoke nail art and a calm, private studio atmosphere. Perfect for special occasions, photoshoots and everyday luxury.</p>
+        <div class="cta">
+          <button class="btn-primary">Book Now</button>
+          <button class="btn-ghost">View Price List</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1509664152557-07a622f56fda?auto=format&fit=crop&w=1000&q=80" alt="Luxury nails closeup">
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="service"><h3>Acrylic Full Set</h3><p>Strong, sculpted shapes — coffin, stiletto, almond. Perfect for long-lasting glam.</p></div>
+      <div class="service"><h3>Gel Manicure</h3><p>Natural look with durable shine, cured under LED for chip resistance.</p></div>
+      <div class="service"><h3>3D & Couture Nail Art</h3><p>Hand-sculpted details, crystals and bespoke embellishments.</p></div>
+      <div class="service"><h3>Chrome & Mirror Finishes</h3><p>High-gloss metallics for editorial looks and statement nails.</p></div>
+      <div class="service"><h3>Ombre & Gradient Nails</h3><p>Soft blends or bold contrasts for sophisticated style.</p></div>
+      <div class="service"><h3>Rhinestones & Embellishments</h3><p>Crystals, jewels, and accents for statement nails.</p></div>
+      <div class="service"><h3>French & Nude Styles</h3><p>Classic elegance and minimalistic charm.</p></div>
+      <div class="service"><h3>Matte Finishes</h3><p>Velvety soft nails with chic, modern appeal.</p></div>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <h3 style="margin-left:6%;font-family:'Playfair Display',serif">Portfolio</h3>
+      <div class="gallery" style="margin-top:12px;padding:0 6%;">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc2039d6?auto=format&fit=crop&w=900&q=80" alt="Acrylic nails">
+        <img src="https://images.unsplash.com/photo-1594737625785-c0db53bc1c50?auto=format&fit=crop&w=900&q=80" alt="Gel nails">
+        <img src="https://images.unsplash.com/photo-1607082350899-7e105aaae0f6?auto=format&fit=crop&w=900&q=80" alt="3D nails">
+        <img src="https://images.unsplash.com/photo-1621784564111-08f6f52ff5d1?auto=format&fit=crop&w=900&q=80" alt="Glitter nails">
+        <img src="https://images.unsplash.com/photo-1600180758890-6cf0fd0c7a8d?auto=format&w=900&q=80" alt="Marble nails">
+        <img src="https://images.unsplash.com/photo-1580910051000-02dfddc7c111?auto=format&w=900&q=80" alt="Matte nails">
+        <img src="https://images.unsplash.com/photo-1562322140-8f4f59a0e1b1?auto=format&w=900&q=80" alt="Coffin nails">
+        <img src="https://images.unsplash.com/photo-1580910050883-046ce9e59929?auto=format&w=900&q=80" alt="Stiletto nails">
+        <img src="https://images.unsplash.com/photo-1600180757791-6b66a701d89f?auto=format&w=900&q=80" alt="Almond nails">
+        <img src="https://images.unsplash.com/photo-1618922417860-7228f97088d4?auto=format&w=900&q=80" alt="Square nails">
+      </div>
+    </section>
+    <section id="prices" class="pricing">
+      <div class="price-card"><h4>Acrylic Full Set</h4><div class="price">€85</div></div>
+      <div class="price-card"><h4>Gel Manicure</h4><div class="price">€65</div></div>
+      <div class="price-card"><h4>Couture Nail Art</h4><div class="price">From €15 per nail</div></div>
+      <div class="price-card"><h4>Ombre/Gradient</h4><div class="price">€50</div></div>
+      <div class="price-card"><h4>Chrome & Mirror</h4><div class="price">€60</div></div>
+      <div class="price-card"><h4>Rhinestones & Embellishments</h4><div class="price">€1–€5 per stone</div></div>
+      <div class="price-card"><h4>French/Nude</h4><div class="price">€40</div></div>
+      <div class="price-card"><h4>Matte Finish</h4><div class="price">+€5</div></div>
+    </section>
+    <section id="contact" style="padding:30px 6%;">
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:start">
+        <div>
+          <h3 style="font-family:'Playfair Display',serif;margin-top:0">Visit & Book</h3>
+          <p style="color:#6b5960">Private studio in central Budapest. Appointments by reservation only.</p>
+          <ul style="color:#6b5960;font-size:15px">
+            <li>📍 Budapest, Hungary</li>
+            <li>📞 +36 30 123 4567</li>
+            <li>📸 Instagram: @anita.nails.lux</li>
+            <li>✉️ info@anitanails.hu</li>
+          </ul>
+        </div>
+        <div class="card">
+          <form>
+            <label style="display:block;margin-bottom:8px;font-weight:600">Request an appointment</label>
+            <input placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #efe8ea;margin-bottom:8px">
+            <input placeholder="Phone or email" style="width:100%;padding:10px;border-radius:8px;border:1px solid #efe8ea;margin-bottom:8px">
+            <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #efe8ea;margin-bottom:8px">
+              <option>Service</option>
+              <option>Acrylic Full Set</option>
+              <option>Gel Manicure</option>
+              <option>Couture Nail Art</option>
+              <option>Ombre/Gradient</option>
+              <option>Chrome/Mirror</option>
+              <option>French/Nude</option>
+            </select>
+            <button class="btn-primary" style="width:100%">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div style="font-size:14px;color:#6b5960">© Anita Nails — Luxury Nail Boutique</div>
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>
